@@ -10,3 +10,4 @@ export const TURNOFF_SEARCH = "turnoff_search";
 export const POSTNOTICE_GET = "postNotice_get";
 export const REPLY_SET = "reply_set";
 export const REPLY_GET = "reply_get";
+export const SCROLL_LANDING = "scroll_landing";

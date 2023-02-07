@@ -1,0 +1,55 @@
+.nameSection-container {
+  position: relative;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  width: 50rem;
+  height: 20rem;
+  margin: auto;
+
+  .nameSection-wrapper--back {
+    border: solid black 1px;
+    box-shadow: 10px 10px #e2e2e2;
+    width: 50rem;
+    height: 20rem;
+    margin: auto;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    .nameLabel-name {
+      span {
+        position: absolute;
+        color: green;
+      }
+    }
+  }
+  .nameSection-wrapper--front {
+    border: solid black 1px;
+    box-shadow: 10px 10px #e2e2e2;
+    width: 50rem;
+    height: 20rem;
+    position: absolute;
+    backface-visibility: hidden;
+
+    .nameLabel-name {
+      img {
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        top: 1rem;
+        left: 23rem;
+      }
+      span {
+        font-size: 3em;
+        position: absolute;
+      }
+      span:nth-child(1) {
+        top: 5rem;
+        left: 8rem;
+      }
+      span:nth-child(3) {
+        left: 13rem;
+        top: 10rem;
+      }
+    }
+  }
+}

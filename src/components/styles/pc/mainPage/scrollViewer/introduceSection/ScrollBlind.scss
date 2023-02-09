@@ -1,0 +1,22 @@
+.blind-section {
+  position: sticky;
+  width: 85rem;
+  top: 0;
+  .blind-block {
+    height: 5rem;
+    background: linear-gradient(black 0%, blue 100%);
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    translate: 0.4s;
+  }
+  .bottom-section {
+    position: absolute;
+    top: 0;
+    .bottom-block {
+      height: 1rem;
+      width: 85rem;
+      background: linear-gradient(black 0%, blue 100%);
+      margin-top: 0.05rem;
+    }
+  }
+}

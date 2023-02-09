@@ -98,7 +98,26 @@ function NameSection() {
       <div className="nameSection-container" ref={NameLabel_Ref}>
         <div className="nameSection-wrapper--back">
           <div className="nameLabel-name" ref={Back_Ref}>
-            <span>이영노</span>
+            <div className="logo-section">
+              <img src="/assets/nameSection/pngegg.png" />
+            </div>
+            <div className="myImage"></div>
+            <div className="span-section1">
+              <span>이영노/면접자</span>
+              <br />
+              <span>서울특별시 관악구 신림동 거주</span>
+            </div>
+            <div className="span-section2">
+              <span>Tel : 010-5149-**** / Email : dldudsh83@gmail.com </span>{" "}
+              <br />
+              <span
+                onClick={() =>
+                  window.open("https://github.com/yeongno/", "_blank")
+                }
+              >
+                GitHub : yeongno
+              </span>
+            </div>
           </div>
         </div>
         <div className="nameSection-wrapper--front">

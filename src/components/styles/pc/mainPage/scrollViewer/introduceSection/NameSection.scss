@@ -16,9 +16,64 @@
     backface-visibility: hidden;
     transform: rotateX(180deg);
     .nameLabel-name {
-      span {
+      .logo-section {
         position: absolute;
-        color: green;
+        top: -5rem;
+        left: -3rem;
+        img {
+          width: 25rem;
+          height: 25rem;
+        }
+      }
+      .myImage {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        left: 40rem;
+        top: 3rem;
+        border: solid black 1px;
+      }
+      .span-section1 {
+        cursor: default;
+        position: absolute;
+        width: 45rem;
+        // left: 38.7rem;
+        top: 8.3rem;
+        text-align: end;
+        span {
+          //   position: absolute;
+          &:nth-child(1) {
+            // left: 38.7rem;
+            // top: 8.3rem;
+          }
+          &:nth-child(2) {
+            // left: 30.7rem;
+            // top: 10.3rem;
+          }
+        }
+      }
+      .span-section2 {
+        position: absolute;
+        width: 45rem;
+        // left: 38.7rem;
+        top: 13.3rem;
+        text-align: end;
+        span {
+          cursor: default;
+          //   position: absolute;
+          &:nth-child(3) {
+            cursor: pointer;
+            &:hover {
+              color: blue;
+            }
+            // left: 38.7rem;
+            // top: 8.3rem;
+          }
+          &:nth-child(2) {
+            // left: 30.7rem;
+            // top: 10.3rem;
+          }
+        }
       }
     }
   }

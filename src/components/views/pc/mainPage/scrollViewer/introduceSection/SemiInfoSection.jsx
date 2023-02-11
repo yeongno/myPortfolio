@@ -22,17 +22,21 @@ function SemiInfoSection() {
   return (
     <div className="semiInfoSection-container">
       <div className="semiInfoSection-wrapper">
-        <div className="blind-container">
-          <ScrollBlind />
-        </div>{" "}
-        <div className="blind-padding" />
-        <div className="title-Section">
-          aaa
-          <span ref={Title_Ref}>Title</span>
+        <div className="detail-container">
+          <div className="detail-wrapper">
+            <div className="title-Section">
+              aaa
+              <span ref={Title_Ref}>Title</span>
+            </div>
+            <div className="subTitle-Section">SubTitle</div>
+            <div className="detail-Section">Detail</div>
+          </div>
+          <div className="blind-container">
+            <ScrollBlind />
+          </div>{" "}
         </div>
-        <div className="subTitle-Section">SubTitle</div>
-        <div className="detail-Section">Detail</div>
       </div>
+      <div className="blind-padding" />
     </div>
   );
 }

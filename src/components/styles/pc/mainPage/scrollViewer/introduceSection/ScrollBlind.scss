@@ -3,10 +3,39 @@
   width: 85rem;
   top: 0;
   .blind-block {
+    &:nth-child(1) {
+      background: url(../../../../../../../public/assets/blind/blind_1.jpg);
+    }
+    &:nth-child(2) {
+      background: url(../../../../../../../public/assets/blind/blind_2.jpg);
+    }
+    &:nth-child(3) {
+      background: url(../../../../../../../public/assets/blind/blind_3.jpg);
+    }
+    &:nth-child(4) {
+      background: url(../../../../../../../public/assets/blind/blind_4.jpg);
+    }
+    &:nth-child(5) {
+      background: url(../../../../../../../public/assets/blind/blind_5.jpg);
+    }
+    &:nth-child(6) {
+      background: url(../../../../../../../public/assets/blind/blind_6.jpg);
+    }
+    &:nth-child(7) {
+      background: url(../../../../../../../public/assets/blind/blind_7.jpg);
+    }
+    &:nth-child(8) {
+      background: url(../../../../../../../public/assets/blind/blind_8.jpg);
+    }
+    &:nth-child(9) {
+      background: url(../../../../../../../public/assets/blind/blind_9.jpg);
+    }
+    &:nth-child(10) {
+      background: url(../../../../../../../public/assets/blind/blind_10.jpg);
+    }
     height: 5rem;
-    background: linear-gradient(black 0%, blue 100%);
     transform: rotateX(0deg);
-    transform-style: preserve-3d;
+    // transform-style: preserve-3d;
     translate: 0.4s;
   }
   //   .bottom-section {

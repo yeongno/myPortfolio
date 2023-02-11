@@ -1,21 +1,29 @@
 .semiInfoSection-container {
-  padding: 3rem;
   .blind-padding {
-    width: 100%;
+    width: 85rem;
     height: 250vh;
   }
   .semiInfoSection-wrapper {
-    font-size: 5em;
     position: absolute;
     height: 250vh;
     .detail-container {
+      width: 85rem;
       position: absolute;
       height: 250vh;
       top: 0;
       .detail-wrapper {
+        padding: 3rem;
         position: sticky;
         top: 0;
+        .border-container {
+          padding: 1rem 1rem 1rem 1rem;
+          border: solid black 2px;
+        }
         .title-Section {
+          text-shadow: 6px 2px 2px rgba(163, 239, 243, 0.667);
+
+          font-weight: bold;
+          font-size: 3em;
           translate: 1s;
           span {
             background: linear-gradient(black 0%, blue 100%);
@@ -25,18 +33,16 @@
             color: transparent;
           }
         }
-        .subTitle-Section {
-          background: linear-gradient(#292931 0%, #ff0000 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-        }
+
         .detail-Section {
+          font-size: 2em;
+          margin-top: 2rem;
         }
       }
       .blind-container {
         position: absolute;
         height: 250vh;
+        width: 85rem;
         top: 0;
       }
     }

@@ -24,12 +24,22 @@ function SemiInfoSection() {
       <div className="semiInfoSection-wrapper">
         <div className="detail-container">
           <div className="detail-wrapper">
-            <div className="title-Section">
-              aaa
-              <span ref={Title_Ref}>Title</span>
+            <div className="border-container">
+              <div className="title-Section">
+                <span ref={Title_Ref}>
+                  Hello and welcome to my front-end portfolio!!
+                </span>
+              </div>
+              <div className="detail-Section">
+                I am a driven and passionate front-end developer, constantly
+                seeking to expand my skills and knowledge in the field.
+                Throughout this portfolio, you will find a showcase of my
+                projects and experience, highlighting my expertise in creating
+                visually appealing and user-friendly websites and applications.
+                Thank you for taking the time to view my work, and I hope to
+                have the opportunity to collaborate on future projects.
+              </div>
             </div>
-            <div className="subTitle-Section">SubTitle</div>
-            <div className="detail-Section">Detail</div>
           </div>
           <div className="blind-container">
             <ScrollBlind />

@@ -7,19 +7,12 @@ import "../../../../../styles/pc/mainPage/scrollViewer/introduceSection/NameSect
 function NameSection() {
   const [OnFlip, setOnFlip] = useState(false);
 
-  const TestLine_Ref = useRef();
-
   //nameLabel ref
   const Front_Ref = useRef();
   const Back_Ref = useRef();
   const NameLabel_Ref = useRef();
 
   const scroll = useSelector((state) => state?.scroll?.landingScroll);
-  const test1 = () => {
-    // TestLine_Ref.current?.scrollIntoView({ behavior: "smooth" });
-    console.log(NameLabel_Ref.current?.getBoundingClientRect().y);
-    // console.log(TestLine_Ref.current?.offsetTop);
-  };
 
   //네임라벨 상대 위치 값
   const nameLabel = NameLabel_Ref.current?.getBoundingClientRect().y;
@@ -50,51 +43,6 @@ function NameSection() {
 
   return (
     <div>
-      <span>test 1Line</span>
-      <br />
-      <span>test 2Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br /> <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span>test 3Line</span>
-      <br />
-      <span onClick={test1} ref={TestLine_Ref}>
-        test 4Line
-      </span>
-      <br />{" "}
       <div className="nameSection-container" ref={NameLabel_Ref}>
         <div className="nameSection-wrapper--back">
           <div className="nameLabel-name" ref={Back_Ref}>

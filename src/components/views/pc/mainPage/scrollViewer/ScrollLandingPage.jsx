@@ -3,6 +3,7 @@ import NameSection from "./introduceSection/NameSection";
 import SemiInfoSection from "./introduceSection/SemiInfoSection";
 import MarkNav from "./markNav/MarkNav";
 import "../../../../styles/pc/mainPage/scrollViewer/ScrollLandingPage.scss";
+import SemiInfoSection2 from "./introduceSection/SemiInfoSection2";
 
 function ScrollLandingPage() {
   //todo
@@ -18,6 +19,7 @@ function ScrollLandingPage() {
         <div className="rightMain-section">
           <SemiInfoSection />
           <NameSection />
+          <SemiInfoSection2 />
         </div>
       </div>
     </div>

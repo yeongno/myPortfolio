@@ -4,14 +4,15 @@
   transform-style: preserve-3d;
   width: 50rem;
   height: 20rem;
-  margin: auto;
+  margin-top: 20rem;
+  margin-left: auto;
+  margin-right: auto;
 
   .nameSection-wrapper--back {
     border: solid black 1px;
     box-shadow: 10px 10px #e2e2e2;
     width: 50rem;
     height: 20rem;
-    margin: auto;
     position: absolute;
     backface-visibility: hidden;
     transform: rotateX(180deg);

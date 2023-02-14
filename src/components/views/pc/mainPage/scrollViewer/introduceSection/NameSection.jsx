@@ -38,9 +38,6 @@ function NameSection() {
     }
   }, [nameLabel]);
 
-  //todo
-  //1. 네임라벨 정보 기입 & UI(아이콘 및 폰트 디자인)
-
   return (
     <div>
       <div className="nameSection-container" ref={NameLabel_Ref}>

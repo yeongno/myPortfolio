@@ -6,10 +6,6 @@ import "../../../../styles/pc/mainPage/scrollViewer/ScrollLandingPage.scss";
 import SemiInfoSection2 from "./introduceSection/SemiInfoSection2";
 
 function ScrollLandingPage() {
-  //todo
-  //1. SemiInfoSection1 백그라운드 어떻게 할지 정하고 세팅하기
-  //2. SemiInfoSection2 만들기
-  //3. 이력 정보 넣기
   return (
     <div>
       <div className="ScrollLandingPage_container">

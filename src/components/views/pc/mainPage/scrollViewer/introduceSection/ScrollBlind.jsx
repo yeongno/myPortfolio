@@ -50,12 +50,6 @@ function ScrollBlind() {
     );
   });
 
-  //todo
-  //1. bottom-section이 전부다 먹었을 때는 뒤에 semiInfo의 position값 또한 sticky로 하여
-  //화면에 보여줄 수 있게 한다.
-  //2. semiInfo의 내용을 추가하고 스타일 지정까지 한다.
-  //2-1 된다면 스크롤시 gradient효과가 바뀔 수 있게 설정.
-  //3. 최종적으로 블라인드 ui를 최대한 자연스럽게 손대준다.
   return (
     <div className="blind-section">
       {renderCards}

@@ -1,27 +1,53 @@
 .semiInfoSection2-container {
+  cursor: default;
   margin-top: 10rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   .semiInfoSection2-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100rem;
     .title-section {
+      top: 2rem;
+      position: absolute;
+      font-size: 2em;
       font-weight: bold;
     }
     .firstInfo-section {
+      position: absolute;
+      margin-top: 3rem;
+      top: 2rem;
+      font-size: 1.3em;
       .subTitle1-section {
+        font-weight: bold;
       }
       .detail1-section {
+        width: 70rem;
       }
     }
-    .secondtInfo-section {
+    .secondInfo-section {
+      position: absolute;
+      top: 13rem;
+      font-size: 1.3em;
       .subTitle2-section {
+        font-weight: bold;
       }
       .detail2-section {
       }
     }
     .thirdInfo-section {
+      position: absolute;
+      top: 17.5rem;
+      font-size: 1.3em;
       .subTitle3-section {
+        font-weight: bold;
       }
       .detail3-section {
       }
       .subTitle3_2-section {
+        margin-top: 1.5rem;
+        font-weight: bold;
       }
       .detail3_2-section {
       }

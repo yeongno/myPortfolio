@@ -38,7 +38,7 @@ function SemiInfoSection2() {
             <TypingText text={SubTitle2} rectY={500} time={100} />
           </div>
           <div className="detail2-section">
-            <TypingText text={Detail2} rectY={500} time={100} />
+            <TypingText text={Detail2} rectY={500} time={40} />
           </div>
         </div>
         <div className="thirdInfo-section">

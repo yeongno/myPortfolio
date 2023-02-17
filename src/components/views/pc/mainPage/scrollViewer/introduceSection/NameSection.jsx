@@ -39,7 +39,7 @@ function NameSection() {
   }, [nameLabel]);
 
   return (
-    <div>
+    <div className="nameSection-border">
       <div className="nameSection-container" ref={NameLabel_Ref}>
         <div className="nameSection-wrapper--back">
           <div className="nameLabel-name" ref={Back_Ref}>

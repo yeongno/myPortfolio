@@ -1,110 +1,116 @@
-.nameSection-container {
-  position: relative;
-  transition: 0.4s;
-  transform-style: preserve-3d;
-  width: 50rem;
-  height: 20rem;
-  margin-top: 20rem;
-  margin-left: auto;
-  margin-right: auto;
+.nameSection-border {
+  width: 85rem;
+  height: 50rem;
+  border: solid rgba(237, 240, 237, 0.441) 5px;
 
-  .nameSection-wrapper--back {
-    border: solid black 1px;
-    box-shadow: 10px 10px #e2e2e2;
+  .nameSection-container {
+    position: relative;
+    transition: 0.4s;
+    transform-style: preserve-3d;
     width: 50rem;
     height: 20rem;
-    position: absolute;
-    backface-visibility: hidden;
-    transform: rotateX(180deg);
-    .nameLabel-name {
-      .logo-section {
-        position: absolute;
-        top: -5rem;
-        left: -3rem;
-        img {
-          width: 25rem;
-          height: 25rem;
-        }
-      }
-      .myImage {
-        position: absolute;
-        width: 5rem;
-        height: 5rem;
-        left: 40rem;
-        top: 3rem;
-        border: solid black 1px;
-      }
-      .span-section1 {
-        cursor: default;
-        position: absolute;
-        width: 45rem;
-        // left: 38.7rem;
-        top: 8.3rem;
-        text-align: end;
-        span {
-          //   position: absolute;
-          &:nth-child(1) {
-            // left: 38.7rem;
-            // top: 8.3rem;
-          }
-          &:nth-child(2) {
-            // left: 30.7rem;
-            // top: 10.3rem;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .nameSection-wrapper--back {
+      border: solid black 1px;
+      box-shadow: 10px 10px #e2e2e2;
+      width: 50rem;
+      height: 20rem;
+      position: absolute;
+      backface-visibility: hidden;
+      transform: rotateX(180deg);
+      .nameLabel-name {
+        .logo-section {
+          position: absolute;
+          top: -5rem;
+          left: -3rem;
+          img {
+            width: 25rem;
+            height: 25rem;
           }
         }
-      }
-      .span-section2 {
-        position: absolute;
-        width: 45rem;
-        // left: 38.7rem;
-        top: 13.3rem;
-        text-align: end;
-        span {
+        .myImage {
+          position: absolute;
+          width: 5rem;
+          height: 5rem;
+          left: 40rem;
+          top: 3rem;
+          border: solid black 1px;
+        }
+        .span-section1 {
           cursor: default;
-          //   position: absolute;
-          &:nth-child(3) {
-            cursor: pointer;
-            &:hover {
-              color: blue;
+          position: absolute;
+          width: 45rem;
+          // left: 38.7rem;
+          top: 8.3rem;
+          text-align: end;
+          span {
+            //   position: absolute;
+            &:nth-child(1) {
+              // left: 38.7rem;
+              // top: 8.3rem;
             }
-            // left: 38.7rem;
-            // top: 8.3rem;
+            &:nth-child(2) {
+              // left: 30.7rem;
+              // top: 10.3rem;
+            }
           }
-          &:nth-child(2) {
-            // left: 30.7rem;
-            // top: 10.3rem;
+        }
+        .span-section2 {
+          position: absolute;
+          width: 45rem;
+          // left: 38.7rem;
+          top: 13.3rem;
+          text-align: end;
+          span {
+            cursor: default;
+            //   position: absolute;
+            &:nth-child(3) {
+              cursor: pointer;
+              &:hover {
+                color: blue;
+              }
+              // left: 38.7rem;
+              // top: 8.3rem;
+            }
+            &:nth-child(2) {
+              // left: 30.7rem;
+              // top: 10.3rem;
+            }
           }
         }
       }
     }
-  }
-  .nameSection-wrapper--front {
-    border: solid black 1px;
-    box-shadow: 10px 10px #e2e2e2;
-    width: 50rem;
-    height: 20rem;
-    position: absolute;
-    backface-visibility: hidden;
+    .nameSection-wrapper--front {
+      border: solid black 1px;
+      box-shadow: 10px 10px #e2e2e2;
+      width: 50rem;
+      height: 20rem;
+      position: absolute;
+      backface-visibility: hidden;
 
-    .nameLabel-name {
-      img {
-        width: 20rem;
-        height: 20rem;
-        position: absolute;
-        top: 1rem;
-        left: 23rem;
-      }
-      span {
-        font-size: 3em;
-        position: absolute;
-      }
-      span:nth-child(1) {
-        top: 5rem;
-        left: 8rem;
-      }
-      span:nth-child(3) {
-        left: 13rem;
-        top: 10rem;
+      .nameLabel-name {
+        img {
+          width: 20rem;
+          height: 20rem;
+          position: absolute;
+          top: 1rem;
+          left: 23rem;
+        }
+        span {
+          font-size: 3em;
+          position: absolute;
+        }
+        span:nth-child(1) {
+          top: 5rem;
+          left: 8rem;
+        }
+        span:nth-child(3) {
+          left: 13rem;
+          top: 10rem;
+        }
       }
     }
   }

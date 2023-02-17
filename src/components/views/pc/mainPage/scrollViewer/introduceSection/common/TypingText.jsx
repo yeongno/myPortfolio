@@ -10,7 +10,11 @@ import { useSelector } from "react-redux";
 
 const TypingText = ({ text, rectY, time }) => {
   const nowY_Ref = useRef();
+
+  //현 요소의 상대값
   const nowY = nowY_Ref.current?.getBoundingClientRect().y;
+
+  //타이핑 시작하기 위한 플래그
   const [scrollOn, setScrollOn] = useState(false);
 
   useEffect(() => {
@@ -18,7 +22,17 @@ const TypingText = ({ text, rectY, time }) => {
     if (nowY < rectY) {
       setScrollOn(true);
     }
-  }, [nowY]);
+
+    //어느 정도 해당 컴포넌트가 멀어졌을 때 리셋 하여 다시 작동하게 세팅
+    if (
+      (nowY > 1000 && scrollOn == true) ||
+      (nowY < -1000 && scrollOn == true)
+    ) {
+      setScrollOn(false);
+      setDisplay("");
+      setCount(0);
+    }
+  }, [nowY, scrollOn]);
 
   const [count, setCount] = useState(0);
   const [display, setDisplay] = useState("");

@@ -12,3 +12,4 @@ export const REPLY_SET = "reply_set";
 export const REPLY_GET = "reply_get";
 export const SCROLL_LANDING = "scroll_landing";
 export const SCROLL_MARK = "scroll_mark";
+export const SCROLL_NOW = "scroll_now";

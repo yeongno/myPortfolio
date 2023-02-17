@@ -7,7 +7,10 @@ import SemiInfoSection2 from "./introduceSection/SemiInfoSection2";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { markScroll } from "../../../../../redux/_actions/scroll_action";
+import {
+  markScroll,
+  nowScroll,
+} from "../../../../../redux/_actions/scroll_action";
 
 function ScrollLandingPage() {
   const dispatch = useDispatch();
@@ -16,11 +19,36 @@ function ScrollLandingPage() {
   const Semi2_Ref = useRef();
   const [active, setActive] = useState("");
 
+  //Y위치 상대값
   const SemiY = Semi_Ref.current?.getBoundingClientRect().y;
   const NameY = Name_Ref.current?.getBoundingClientRect().y;
   const Semi2Y = Semi2_Ref.current?.getBoundingClientRect().y;
+
+  //Y위치 절대값
+  const NowSemiY = Semi_Ref.current?.offsetTop;
+  const NowNameY = Name_Ref.current?.offsetTop;
+  const NowSemi2Y = Semi2_Ref.current?.offsetTop;
+
+  //절대 값 리덕스 전달
   useEffect(() => {
-    console.log("semiY", SemiY);
+    dispatch(
+      nowScroll({ Semi: [NowSemiY], Name: [NowNameY], Semi2: [NowSemi2Y] })
+    );
+  }, [NowSemiY, NowNameY, NowSemi2Y]);
+
+  //처음 렌더링 할 시 각 컴포넌트의 Y값을 redux에 주기 위함
+  const firstMove = () => {
+    window.scrollTo({
+      top: 1,
+      behavior: "smooth",
+    });
+  };
+  useEffect(() => {
+    firstMove();
+  }, []);
+
+  //상대값 리덕스 전달 및 Active값 세팅
+  useEffect(() => {
     if (SemiY < 300) {
       setActive("Semi");
       dispatch(markScroll("Semi"));

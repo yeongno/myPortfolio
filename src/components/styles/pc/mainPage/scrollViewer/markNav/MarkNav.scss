@@ -2,7 +2,15 @@
   position: absolute;
   width: 7.4rem;
   height: 1000%;
-
+  .text-section {
+    width: 4rem;
+    padding-top: 8rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-size: 1.3em;
+    // color: rgb(55, 58, 232);
+    text-shadow: 6px 6px 6px rgba(246, 171, 246, 0.667);
+  }
   .markNav-wrapper {
     position: sticky;
     top: 0;

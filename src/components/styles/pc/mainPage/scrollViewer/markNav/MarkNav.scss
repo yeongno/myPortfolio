@@ -1,6 +1,6 @@
 .markNav-container {
   position: absolute;
-  width: 8.14rem;
+  width: 7.4rem;
   height: 1000%;
 
   .markNav-wrapper {
@@ -11,14 +11,29 @@
       background: rgba(54, 60, 54, 0.441);
       border-bottom: solid rgba(237, 240, 237, 0.441);
     }
+    .semiInfoSection-section__active {
+      height: 34vh;
+      background: rgba(45, 238, 238, 0.725);
+      border-bottom: solid rgba(237, 240, 237, 0.441);
+    }
     .nameSection-section {
       height: 33vh;
       background: rgba(54, 60, 54, 0.441);
       border-bottom: solid rgba(237, 240, 237, 0.441);
     }
+    .nameSection-section__active {
+      height: 34vh;
+      background: rgba(45, 238, 238, 0.725);
+      border-bottom: solid rgba(237, 240, 237, 0.441);
+    }
     .semiInfoSection2-section {
       height: 33vh;
       background: rgba(54, 60, 54, 0.441);
+      border-bottom: solid rgba(237, 240, 237, 0.441);
+    }
+    .semiInfoSection2-section__active {
+      height: 34vh;
+      background: rgba(45, 238, 238, 0.725);
       border-bottom: solid rgba(237, 240, 237, 0.441);
     }
   }

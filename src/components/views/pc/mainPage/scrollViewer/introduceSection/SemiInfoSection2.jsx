@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import "../../../../../styles/pc/mainPage/scrollViewer/introduceSection/SemiInfoSection2.scss";
-import "../../../../../styles/pc/mainPage/scrollViewer/introduceSection/SemiInfoSection.scss";
 import TypingText from "./common/TypingText";
 
 function SemiInfoSection2() {
